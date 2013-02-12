@@ -11,15 +11,19 @@
       <div class="flash <%= key %>"><%= value %></div>
     <% end -%>
 
-  <% if signed_in? %>
-    Welcome <%= current_user.email %>
-    <%= link_to t("sign_out"), sign_out_path, method: :delete %>
-  <% else %>
-    <%= link_to t("register"), sign_up_path %>
-    <%= link_to t("sign_in"), sign_in_path %>
-  <% end %>
+  <div class="user_bar">
+    <% if signed_in? %>
+      Welcome <%= current_user.email %>
+      <%= link_to t("sign_out"), sign_out_path, method: :delete %>
+    <% else %>
+      <%= link_to t("register"), sign_up_path %>
+      <%= link_to t("sign_in"), sign_in_path %>
+    <% end %>
+  </div>
 
-<%= yield %>
+  <div class="content">
+    <%= yield %>
+  </div>
 
 </body>
 </html>

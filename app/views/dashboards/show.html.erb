@@ -1,0 +1,10 @@
+<%= form_for @dashboard.new_text_shout do |form| %>
+  <%= form.text_field :body, placeholder: t("compose_shout") %>
+  <%= form.submit t("create_shout") %>
+<% end %>
+<%= form_for @dashboard.new_photo_shout do |form| %>
+  <%= form.file_field :image %>
+  <%= form.submit t("create_shout") %>
+<% end %>
+
+<%= render @dashboard.timeline %>

@@ -6,3 +6,16 @@ en:
   register: "Register"
   sign_in: "Sign in"
   sign_out: "Sign out"
+  compose_shout: "Compose shout here"
+  create_shout: "Shout!"
+  datetime:
+    distance_in_words:
+      less_than_x_minutes:
+        one: "1m"
+      about_x_minutes:
+        one: "1m"
+        other: "%{count}m"
+      x_minutes:
+        one: "1m"
+        other: "%{count}m"
+

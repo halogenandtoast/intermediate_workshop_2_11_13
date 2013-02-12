@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.content {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.shout {
+  border-bottom: 1px solid #EEE;
+  padding: 10px;
+}
+
+.user_bar {
+  background-color: #555;
+  color: #FFF;
+  padding: 5px 10px;
+  a {
+    color: #EEE;
+    text-decoration: none;
+  }
+}
